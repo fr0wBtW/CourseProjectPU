@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_margin="5dp"
+        android:hint="Въвдете Име"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#0026F6"
+        android:textColor="#0026F6"/>
+
+    <EditText
+        android:id="@+id/editPosition"
+        android:layout_margin="5dp"
+        android:hint="Въведете предлаганата длъжност"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#0026F6"
+        android:textColor="#0026F6" />
+
+    <EditText
+        android:id="@+id/editDescribe"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:hint="Опишете предлаганата услуга"
+        android:textColorHint="#0026F6"
+        android:textColor="#0026F6"
+        android:inputType="textLongMessage" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_margin="5dp"
+        android:textSize="18sp"
+        android:hint="Въведете Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#0026F6"
+        android:textColor="#0026F6"
+        android:inputType="textEmailAddress"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="18sp"
+        android:textColorHint="#0026F6"
+        android:textColor="#0026F6"
+        android:id="@+id/editTel"
+        android:inputType="phone"
+        android:hint="Въведете телефон"
+        >
+    </EditText>
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#0288D1"
+        android:text="Добави услуга"
+        android:textStyle="bold" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/simpleList"></ListView>
+
+</LinearLayout>
